@@ -1,0 +1,38 @@
+version: "3.9"
+
+services:
+  bakasweb:
+    build: ./backend
+    env_file:
+      - .env
+    volumes:
+      - static_vol:/bakas/Templates/frontend/bakas/build/static
+      - media_vol:/bakas/Templates/frontend/bakas/build/static
+
+    restart: always
+    ports:
+      - "8000:8000"
+
+  nginx:
+    build: ./nginx
+    ports:
+      - "80:80"
+    restart: always
+    depends_on:
+      - bakasweb
+    volumes:
+      - static_vol:/bakas/Templates/frontend/bakas/build/static
+      - media_vol:/bakas/Templates/frontend/bakas/build/static
+  redis:
+    image: redis:alpine
+  celery:
+    build:
+      context: ./backend
+    command: celery -A backend.celery worker -l info
+    restart: always
+    env_file:
+      - .env
+
+volumes:
+  media_vol:
+  static_vol:

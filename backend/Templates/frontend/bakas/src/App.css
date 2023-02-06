@@ -1,0 +1,296 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  /* font-family: "Josefin Sans", "Lato", sans-serif; */
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: #f2eee9;
+  box-sizing: border-box;
+  padding: 3rem;
+}
+
+.row {
+  max-width: 144rem;
+  margin: 0 auto;
+  padding-top: 1.6rem;
+}
+.flexRL {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dropshadow {
+  filter: drop-shadow(0px 0px 13px rgba(0, 0, 0, 0.25));
+}
+.textcenter {
+  text-align: center;
+}
+.white {
+  color: #f2eee9;
+}
+.heading-primary--main {
+  font-size: 10rem;
+  color: #28c485;
+  letter-spacing: 1rem;
+  font-family: "Josefin Sans";
+}
+.heading-primary--sub {
+  font-size: 3rem;
+  color: #28c485;
+}
+.heading-secondary {
+  font-family: "Josefin Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 6.4rem;
+  line-height: 6.4rem;
+  color: #4d554c;
+}
+.greenbackground {
+  background-color: #28c485;
+}
+
+.navbar_items {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 3.6rem;
+  line-height: 4.3rem;
+}
+
+.pelleteheading_secondary {
+  font-family: "Lato";
+  font-style: italic;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 2.4rem;
+}
+.pbl {
+  padding-bottom: 4rem;
+}
+.flexProdcuts {
+  display: flex;
+  justify-content: center;
+}
+.alineright {
+  text-align: right;
+}
+.centeriteam {
+  align-self: flex-end;
+}
+.flexprodcutsrow {
+  height: 35rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.context h1 {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+}
+.context {
+  width: 35.3rem;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 2.5rem;
+}
+.colorblack {
+  color: #4d554c;
+}
+.ma {
+  transform: translate(0%, 1rem);
+}
+.ptl {
+  padding-top: 7rem;
+}
+.briquetteBG {
+  background-image: linear-gradient(
+    90deg,
+    #f2eee9 40.33%,
+    #28c485 33.33%,
+    #28c485 58.66%,
+    #f2eee9 58.66%
+  );
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.pelleteheading_primary {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 43px;
+  text-transform: capitalize;
+}
+.wilbis {
+  color: #f2eee9;
+}
+.contacusbox {
+  display: flex;
+  justify-content: center;
+  width: 100rem;
+  margin: auto;
+}
+.contactitle h1 {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+}
+.boxleft {
+  width: 50rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 4rem;
+  border-radius: 10px 0px 0px 10px;
+
+  font-family: "Lato" !important;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: justify;
+
+  gap: 3rem;
+}
+.flexcy {
+  display: flex;
+  padding-bottom: 9px;
+  align-items: center;
+  gap: 2rem;
+  border-bottom: 1px white solid;
+  width: 100%;
+}
+.boxright {
+  width: 50rem;
+  padding: 4rem;
+  border: 1px solid #dfdfdf;
+  border-radius: 0px 10px 10px 0;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+.form-group label {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+.form-control {
+  background: #f2eee9;
+  border: 1px solid #dfdfdf;
+  border-radius: 6px;
+  padding: 1.5rem 10rem 1.5rem 2rem;
+  margin: 1rem 0 2px 0rem;
+}
+.btn {
+  border: none;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+.wewill {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.alert {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 10px;
+  line-height: 19px;
+  color: #ee4c4c;
+  padding: 4px;
+}
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 50%;
+  }
+  body {
+    padding: 0rem;
+  }
+  .navbar_items {
+    width: 10rem;
+  }
+  .row {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 4rem 2rem 0 2rem;
+  }
+  .heading-primary--main {
+    font-size: 7rem;
+    letter-spacing: 0rem;
+  }
+  .heading-primary--sub {
+    font-size: 2rem;
+  }
+  .heading-secondary {
+    font-weight: 400;
+    font-size: 3.4rem;
+    line-height: 7.4rem;
+    color: #4d554c;
+  }
+  .flexProdcuts {
+    flex-direction: column;
+  }
+  .alineright {
+    text-align: left;
+  }
+  .flexprodcutsrow {
+    height: auto;
+  }
+  .centeriteam {
+    order: -1;
+  }
+  .context {
+    padding-bottom: 2rem;
+  }
+  .briquetteBG {
+    background-image: linear-gradient(
+      90deg,
+      #f2eee9 40.33%,
+      #f2eee9 33.33%,
+      #f2eee9 58.66%,
+      #f2eee9 58.66%
+    );
+  }
+  .wilbis {
+    color: #4d554c;
+  }
+  .contacusbox {
+    flex-direction: column;
+    width: 90vw;
+  }
+  .boxleft {
+    width: auto;
+    border-radius: 10px 10px 0px 0px;
+  }
+  .contactitle h1 {
+    padding-bottom: 1rem;
+  }
+  .boxright {
+    width: auto;
+    padding: 4rem;
+    border: 1px solid #dfdfdf;
+    border-radius: 0px 0px 10px 10px;
+  }
+}
