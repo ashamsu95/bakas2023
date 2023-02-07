@@ -7,7 +7,7 @@ services:
       - .env
     volumes:
       - static_vol:/bakas/Templates/frontend/bakas/build/static
-      - media_vol:/bakas/Templates/frontend/bakas/build/static
+      - media_vol:/bakas/Templates/frontend/bakas/build/media
 
     restart: always
     ports:
@@ -22,7 +22,7 @@ services:
       - bakasweb
     volumes:
       - static_vol:/bakas/Templates/frontend/bakas/build/static
-      - media_vol:/bakas/Templates/frontend/bakas/build/static
+      - media_vol:/bakas/Templates/frontend/bakas/build/media
   redis:
     image: redis:alpine
   celery:
