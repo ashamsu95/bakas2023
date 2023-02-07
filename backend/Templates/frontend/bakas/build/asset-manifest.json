@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.943c6d8d.css",
-    "main.js": "/static/js/main.4b76ce1c.js",
+    "main.js": "/static/js/main.7b8b48e8.js",
     "static/media/Briquette.png": "/static/media/Briquette.6e7146eca2df2f71161a.png",
     "static/media/pelletesack.png": "/static/media/pelletesack.0856d59b4f410423bfe6.png",
     "static/media/contactusbutton.svg": "/static/media/contactusbutton.9f24c95dbc82d6dfb1501b100dc31d7c.svg",
     "static/media/BakasLogo.svg": "/static/media/BakasLogo.5d1be52daa2fddc3a8f602f91fab328c.svg",
     "index.html": "/index.html",
     "main.943c6d8d.css.map": "/static/css/main.943c6d8d.css.map",
-    "main.4b76ce1c.js.map": "/static/js/main.4b76ce1c.js.map"
+    "main.7b8b48e8.js.map": "/static/js/main.7b8b48e8.js.map"
   },
   "entrypoints": [
     "static/css/main.943c6d8d.css",
-    "static/js/main.4b76ce1c.js"
+    "static/js/main.7b8b48e8.js"
   ]
 }

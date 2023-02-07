@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="/static/media/bakasbirdred.svg" />
+    <link rel="icon" href="/bakasbirdred.svg" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="theme-color" content="#28C485" />
     <meta
@@ -21,13 +21,34 @@
       href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Lato:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="apple-touch-icon" href="/static/media/bakasbirdred.svg" />
+    <link rel="apple-touch-icon" href="/bakasbirdred.svg" />
     <link rel="manifest" href="/manifest.json" />
-    <title>Bakas</title>
-    <script defer="defer" src="/static/js/main.4b76ce1c.js"></script>
+    <title>BAKAS</title>
+    <script defer="defer" src="/static/js/main.7b8b48e8.js"></script>
     <link href="/static/css/main.943c6d8d.css" rel="stylesheet" />
   </head>
   <body>
+    <div id="fb-root"></div>
+    <div id="fb-customer-chat" class="fb-customerchat"></div>
+    <script>
+      var chatbox = document.getElementById("fb-customer-chat");
+      chatbox.setAttribute("page_id", "100387248453964"),
+        chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+    <script>
+      (window.fbAsyncInit = function () {
+        FB.init({ xfbml: !0, version: "v16.0" });
+      }),
+        (function (e, t, n) {
+          var c,
+            o = e.getElementsByTagName(t)[0];
+          e.getElementById(n) ||
+            (((c = e.createElement(t)).id = n),
+            (c.src =
+              "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js"),
+            o.parentNode.insertBefore(c, o));
+        })(document, "script", "facebook-jssdk");
+    </script>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
   </body>
